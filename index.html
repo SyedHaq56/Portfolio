@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- set the character set -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- first step to a responsive site -->
+    <title>Flexbox styling</title>
+
+    <!-- FONT AWESOME -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Your styles should be called here -->
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      	  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      	<![endif]-->
+  </head>
+
+  <body>
+    <!-- YOUR CONTENT GOES HERE -->
+
+    <div class="container">
+      <section class="top">
+        <h1>Syed Haq's Portfolio</h1>
+        <h2>CUNY J School Class of 2021</h2>
+      </section>
+
+      <!-- <section class="photo"> -->
+
+      <figure>
+        <img class="main_img" src="images/syed.jpg">
+        <figcaption>Trump indicating the direction he'll head towards if he loses. <span class="credit">Credit: Fake News</span></figcaption>
+      </figure>
+
+      <section class="text">
+        <p>I am an aspiring Multimedia Journalist pursuing Master's at Craig Newmark Graduate School of Journalism. I report on various platforms through on-camera reporting, audio, and writings. I have previously worked as a licensed salesman for
+          Allstate Insurance; acquiring the experience of cold calling and marketing; landing and scheduling conversations diplomatically.</p>
+        <p>I am looking for an Entry-Level Reporting position in the New York Metropolitan area.</p>
+      </section>
+
+      <h3 class="flex-hed">Works</h3> <!-- broke the subhed out of text to correct alignment based on mock -->
+
+      <section class="flex">
+        <!-- flex box refers to the box that contains the "flexed" content -->
+
+        <section class="img_holder">
+          <!-- each img_holder is flexed content -->
+          <figure class="sub_img">
+            <img class="small" src="images/vigil.jpg"> <!-- You should crop your images to be the same size before using them, otherwise, even with flex box, they come out uneven -->
+            <figcaption class="sub_cap">GFrom left to right: Bronx Assembly Speaker Carl Heastie, Erwin Figueroa, Danny Harris, at a Sept. vigil for victims of traffic collisions on the Grand Concourse.<span class="credit">Photo: Syed Haq</span>
+            </figcaption>
+            <a href="http://www.motthavenherald.com/2020/09/21/spike-in-bike-accidents-in-the-bronx-spurs-calls-for-a-vigil-for-fallen-victims/">SPIKE IN BIKE ACCIDENTS IN THE BRONX SPURS A VIGIL FOR VICTIMS</a>
+          </figure>
+          <section class="sub_text">
+            <p>When people first meet Clarita Vailon, 40, in her wheelchair, she is so nimble in it that they might assume she has been in one her whole life. But it was when she was hit by a taxi driver in the Bronx 18 years ago that her mobility
+              became severely limited.</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/bhm.jpg">
+            <figcaption class="sub_cap">Black History Month Celebration at City Hall. <span class="credit">Photo by Syed Haq</span></figcaption>
+            <a href="https://medium.com/bradcast-media/city-hall-celebrates-the-black-history-month-2020-3559fa574c02">City Hall Celebrates The Black History Month 2020</a>
+          </figure>
+          <section class="sub_text">
+            <p>On February 25th, 2020, a celebration for the Black History Month was organized in City Hall, hosted by the New York City Council Members Daneek Miller (District 27) and Adrienne Adams (District 28).</p>
+          </section>
+        </section>
+
+
+        <section class="img_holder">
+          <figure class="sub_img">
+            <img class="main_img" src="images/queens.jpg">
+            <figcaption class="sub_cap">From left to right sitting: Costa Constantinides, Anthony Miranda, Donovan Richards, Elizabeth Crowley. <span class="credit">Credit: Syed Haq</span></figcaption>
+            <a href="https://medium.com/bradcast-media/queens-boroughs-candidates-advocate-their-plans-on-environmental-sustainability-c5fab1a23beb">Queens Borough’s Candidates Advocate Their Plans on Environmental Sustainability</a>
+          </figure>
+          <section class="sub_text">
+            <p>On February 12, 2020, four out of the six candidates running to replace Melinda Katz as the Queens Borough President in New York City, participated in a discussion around building a sustainable environment.</p>
+          </section>
+        </section>
+
+      </section>
+      <!-- this ^ closes the flex box section -->
+
+    </div>
+
+    <!-- When you get to using javascript, you'll want to link to it at the bottom of the document, still inside the body. That's for later. -->
+    <!-- the jQuery library. You need this to be able to use jQuery ($) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Your javascript should be called here -->
+
+  </body>
+
+</html>
